@@ -193,7 +193,7 @@
                             }
                         }
                     }
-                    document.getElementById('status').innerText = '💩 fail. refresh the page and try again...';
+                    document.getElementById('status').innerText = '💩 exploit failed. refresh the page and try again...';
                     setTimeout(function() {document.location.reload();}, 1000);
                 }
 
@@ -208,7 +208,7 @@
                     setTimeout(go_, 500);
                 }
 
-                // if Switch browser is detected, auto start exploit
+                // if Switch browser is detected, start exploit
                 if(navigator.userAgent.indexOf('Nintendo Switch')>-1) {
                     document.getElementById('status').innerText = 'Found Nintendo Switch! 🤖';
                     setTimeout(go, 2000);
